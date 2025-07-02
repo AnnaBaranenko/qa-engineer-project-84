@@ -1,0 +1,49 @@
+---
+- summary: |
+    Некорректная работа фильтра по брендам
+  environment: |
+    Google Chrome   137.0.7151.120 (Официальная сборка) (64 бит)
+    ОС Windows 11 Pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Есть возможность выбрать любой бренд из представленных в магазине
+  actual-result: |
+    Можно выбрать только бренды отображаемые на странице
+
+- summary: |
+    Не работает локализация на русский язык 
+  environment: |
+    Google Chrome   137.0.7151.120 (Официальная сборка) (64 бит)
+    ОС Windows 11 Pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Переключить в выпадающем списке язык на русский
+  expected-result: |
+    Категории, наименование товара, описание товара отображается на русском языке
+  actual-result: |
+    Категории, наименование товара, описание товара отображается на английском языке
+
+ - summary: |
+    Неадаптивный дизайн
+  environment: |
+    Iphone SE
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Отображается шапка сайта, список товаров и фильтры
+  actual-result: |
+    Отображается шапка сайта, список брендов. Для отображения товаров нужно пролистать вниз
+
+    - summary: |
+    Невозможность отмены выбота категории 
+  environment: |
+    Google Chrome   137.0.7151.120 (Официальная сборка) (64 бит)
+    ОС Windows 11 Pro
+  steps-to-reproduce: |
+    1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    2. Выбрать категорию beauty
+  expected-result: |
+    Можно отменить выбор категории beauty
+  actual-result: |
+    Нельзя отменить выбор категории товара
