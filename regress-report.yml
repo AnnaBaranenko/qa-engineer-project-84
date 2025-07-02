@@ -3,11 +3,11 @@ test-cases:
   - summary: |
       Отмена выбора категории
     status: pass
-bugreports: []
-
-test-cases:
   - summary: |
       Локализация на русский язык
+    status: fail
+  - summary: |
+      отображение фильтра брендов
     status: fail
 bugreports:
   - summary: |
@@ -24,12 +24,6 @@ bugreports:
     actual-result: >
       Категории, наименование товара, описание товара отображается на
       английском языке
-
-test-cases:
-  - summary: |
-      Отмена выбора категории
-    status: pass
-bugreports:
   - summary: |
       Неадаптивный дизайн
     environment: |
