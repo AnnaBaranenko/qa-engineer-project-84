@@ -1,0 +1,16 @@
+---
+- summary: |
+    Поиск по ключевому слову
+  status: pass
+
+- summary: |
+    Фильтр списка товаров
+  status: pass
+
+- summary: |
+    Просмотр информации о товаре
+  status: pass  
+
+- summary: |
+     Добавление товара в корзину
+  status: pass
