@@ -1,0 +1,45 @@
+---
+test-cases:
+  - summary: |
+      Отмена выбора категории
+    status: pass
+bugreports: []
+
+---
+test-cases:
+  - summary: |
+      Локализация на русский язык
+    status: fail
+bugreports:
+  - summary: |
+      Не работает локализация на русский язык 
+    environment: |
+      Google Chrome   137.0.7151.120 (Официальная сборка) (64 бит)
+      ОС Windows 11 Pro
+    steps-to-reproduce: |
+      1. Зайти на страницу https://hexlet-products-store.vercel.app/
+      2. Переключить в выпадающем списке язык на русский
+    expected-result: >
+      Категории, наименование товара, описание товара отображается на
+      русском языке
+    actual-result: >
+      Категории, наименование товара, описание товара отображается на
+      английском языке
+
+---
+test-cases:
+  - summary: |
+      Отмена выбора категории
+    status: pass
+bugreports:
+  - summary: |
+      Неадаптивный дизайн
+    environment: |
+      Iphone SE
+    steps-to-reproduce: |
+      1. Зайти на страницу https://hexlet-products-store.vercel.app/
+    expected-result: |
+      Отображается шапка сайта, список товаров и фильтры
+    actual-result: >
+      Отображается шапка сайта, список товаров. Фильтр брендов
+      отображается в самом низу страницы
